@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS | Luxury Timepieces India</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0b0f17',
+                            800: '#111827',
+                            700: '#1f2937',
+                            600: '#374151'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #854d0e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #78350f 100%);
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+            box-shadow: 0 10px 25px -5px rgba(234, 179, 8, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-900 via-amber-700 to-amber-900 text-amber-100 text-xs py-2 text-center font-medium tracking-widest uppercase border-b border-amber-600/30">
+        <i class="fa-solid fa-gift mr-2"></i> Festive Special Offer: Get 15% OFF using code <span class="font-bold underline text-white">KRONOS15</span> | Free Express Shipping across India
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 glass-panel border-b border-gray-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Store Logo & Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full border-2 border-amber-500/80 flex items-center justify-center bg-dark-800 group-hover:border-amber-400 transition-colors shadow-lg shadow-amber-500/10">
+                        <!-- Custom SVG Watch Icon Logo -->
+                        <svg class="w-6 h-6 text-amber-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="9" stroke-width="1.5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2" />
+                            <path stroke-linecap="round" stroke-width="2" d="M12 1v2M12 21v2M1 12h2M21 12h2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl font-bold tracking-widest text-white group-hover:text-amber-400 transition-colors">KRONOS</span>
+                        <span class="block text-[9px] tracking-[0.3em] text-amber-400 uppercase font-semibold">Haute Horlogerie</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                    <a href="#hero-slider" class="hover:text-amber-400 transition-colors">Featured</a>
+                    <a href="#watch-collection" class="hover:text-amber-400 transition-colors">Exclusive Collection</a>
+                    <a href="#about-us-page" class="hover:text-amber-400 transition-colors">About Us</a>
+                    <a href="#about-us" class="hover:text-amber-400 transition-colors">Craftsmanship</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">Boutiques</a>
+                </nav>
+
+                <!-- Header Actions (Search & Cart) -->
+                <div class="flex items-center space-x-5">
+                    <!-- Offer Badge -->
+                    <div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
+                        <i class="fa-solid fa-percent text-xs"></i>
+                        <span>Save up to 30%</span>
+                    </div>
+
+                    <!-- Cart Icon Button -->
+                    <button id="cart-btn" onclick="toggleCart()" class="relative p-2.5 rounded-full bg-dark-800 hover:bg-gray-800 border border-gray-700 hover:border-amber-500/50 transition-all text-gray-200 hover:text-amber-400">
+                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                        <!-- Dynamic Cart Count -->
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-amber-500 text-black font-bold text-[11px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-dark-900 shadow-md">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Interactive Image Slider -->
+        <section id="hero-slider" class="relative overflow-hidden bg-dark-900 py-6 sm:py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-dark-800">
+                    
+                    <!-- Slider Container -->
+                    <div id="slider-track" class="flex transition-transform duration-700 ease-in-out">
+                        
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0 relative min-h-[450px] md:min-h-[520px] flex items-center bg-gradient-to-r from-black via-dark-900/90 to-transparent">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80" alt="Chronograph Collection Banner" class="absolute inset-0 w-full h-full object-cover object-center opacity-40 mix-blend-luminosity">
+                            <div class="relative z-10 p-8 sm:p-12 md:p-16 max-w-2xl">
+                                <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 text-xs uppercase tracking-widest font-semibold rounded-md mb-4">Masterpiece Edition</span>
+                                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight mb-4">Precision Engineering Met With Elegance</h1>
+                                <p class="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed">Discover hand-assembled Swiss movements crafted for timeless perfection. Experience true horology at your wrist.</p>
+                                <div class="flex flex-wrap gap-4 items-center">
+                                    <a href="#watch-collection" class="gold-btn px-6 py-3 rounded-lg text-black font-bold text-sm tracking-wide flex items-center gap-2">
+                                        Explore Collection <i class="fa-solid fa-arrow-right text-xs"></i>
+                                    </a>
+                                    <span class="text-amber-400 font-serif text-lg font-semibold ml-2">Starting at ₹14,999</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0 relative min-h-[450px] md:min-h-[520px] flex items-center bg-gradient-to-r from-black via-dark-900/90 to-transparent">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80" alt="Luxury Steel Watches" class="absolute inset-0 w-full h-full object-cover object-center opacity-40">
+                            <div class="relative z-10 p-8 sm:p-12 md:p-16 max-w-2xl">
+                                <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 text-xs uppercase tracking-widest font-semibold rounded-md mb-4">Royal Chronograph</span>
+                                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight mb-4">316L Surgical Stainless Steel Architecture</h1>
+                                <p class="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed">Scratch-resistant sapphire crystal with anti-reflective coating and 100M water resistance.</p>
+                                <div class="flex flex-wrap gap-4 items-center">
+                                    <a href="#watch-collection" class="gold-btn px-6 py-3 rounded-lg text-black font-bold text-sm tracking-wide flex items-center gap-2">
+                                        Shop Steel Series <i class="fa-solid fa-arrow-right text-xs"></i>
+                                    </a>
+                                    <span class="text-amber-400 font-serif text-lg font-semibold ml-2">Special Festival Discounts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0 relative min-h-[450px] md:min-h-[520px] flex items-center bg-gradient-to-r from-black via-dark-900/90 to-transparent">
+                            <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1600&q=80" alt="Classic Leather Vintage Watches" class="absolute inset-0 w-full h-full object-cover object-center opacity-40">
+                            <div class="relative z-10 p-8 sm:p-12 md:p-16 max-w-2xl">
+                                <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 text-xs uppercase tracking-widest font-semibold rounded-md mb-4">Heritage Leather</span>
+                                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight mb-4">Handcrafted Genuine Italian Calfskin</h1>
+                                <p class="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed">Classic open-heart skeleton design showcasing the rhythmic heartbeat of mechanical excellence.</p>
+                                <div class="flex flex-wrap gap-4 items-center">
+                                    <a href="#watch-collection" class="gold-btn px-6 py-3 rounded-lg text-black font-bold text-sm tracking-wide flex items-center gap-2">
+                                        View Vintage Heritage <i class="fa-solid fa-arrow-right text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider Controls (Prev/Next Arrows) -->
+                    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full glass-panel flex items-center justify-center text-white hover:text-amber-400 hover:border-amber-500/50 transition-all z-20">
+                        <i class="fa-solid fa-chevron-left text-lg"></i>
+                    </button>
+                    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full glass-panel flex items-center justify-center text-white hover:text-amber-400 hover:border-amber-500/50 transition-all z-20">
+                        <i class="fa-solid fa-chevron-right text-lg"></i>
+                    </button>
+
+                    <!-- Slider Indicators -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+                        <button onclick="goToSlide(0)" class="slide-dot w-8 h-2 rounded-full bg-amber-500 transition-all duration-300"></button>
+                        <button onclick="goToSlide(1)" class="slide-dot w-2.5 h-2 rounded-full bg-white/40 hover:bg-white transition-all duration-300"></button>
+                        <button onclick="goToSlide(2)" class="slide-dot w-2.5 h-2 rounded-full bg-white/40 hover:bg-white transition-all duration-300"></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Propositions -->
+        <section class="py-8 bg-dark-800/60 border-y border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 flex flex-col items-center">
+                    <i class="fa-solid fa-truck-fast text-amber-400 text-2xl mb-2"></i>
+                    <h4 class="font-semibold text-white text-sm">Insured Express Shipping</h4>
+                    <p class="text-xs text-gray-400">Free delivery all over India</p>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <i class="fa-solid fa-shield-halved text-amber-400 text-2xl mb-2"></i>
+                    <h4 class="font-semibold text-white text-sm">2-Year International Warranty</h4>
+                    <p class="text-xs text-gray-400">100% Genuine Authenticity</p>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <i class="fa-solid fa-rotate-left text-amber-400 text-2xl mb-2"></i>
+                    <h4 class="font-semibold text-white text-sm">7-Day Easy Returns</h4>
+                    <p class="text-xs text-gray-400">Hassle-free replacement</p>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <i class="fa-solid fa-headset text-amber-400 text-2xl mb-2"></i>
+                    <h4 class="font-semibold text-white text-sm">24/7 VIP Concierge</h4>
+                    <p class="text-xs text-gray-400">Dedicated luxury support</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured 5 Watch Products Section -->
+        <section id="watch-collection" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-amber-400 uppercase tracking-widest text-xs font-semibold">The Flagship Catalog</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">Curated Timepiece Collection</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-amber-500 to-amber-700 mx-auto mt-4 rounded-full"></div>
+                <p class="text-gray-400 text-sm mt-3">Explore our premier collection of luxury watches with exclusive festival discounts & instant checkout.</p>
+            </div>
+
+            <!-- Product Cards Grid (5 Watches) -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript will render 5 watch products dynamically -->
+            </div>
+        </section>
+
+        <!-- Promo Banner Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
+            <div class="relative rounded-2xl overflow-hidden glass-panel border border-amber-500/30 p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-r from-amber-950/40 via-dark-800 to-dark-900">
+                <div class="space-y-3 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-tag"></i> Special Offer
+                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Get Extra ₹1,500 Off On Cart Above ₹20,000</h3>
+                    <p class="text-gray-300 text-sm max-w-xl">Apply coupon code <code class="bg-black/60 px-2 py-1 rounded text-amber-400 font-mono text-base border border-amber-500/40">KRONOS15</code> during checkout to unlock instant discounts.</p>
+                </div>
+                <button onclick="copyCoupon('KRONOS15')" class="gold-btn px-6 py-3 rounded-xl font-bold text-black text-sm whitespace-nowrap flex items-center gap-2 shadow-lg hover:scale-105 transition-transform">
+                    <i class="fa-regular fa-copy"></i> Copy Code "KRONOS15"
+                </button>
+            </div>
+        </section>
+
+        <!-- Brand Craftsmanship Section -->
+        <section id="about-us" class="py-16 bg-dark-800/40 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=80" alt="Watchmaking Craft" class="rounded-2xl shadow-2xl border border-gray-800 object-cover w-full h-[400px]">
+                    <div class="absolute -bottom-6 -right-6 glass-panel p-6 rounded-2xl hidden sm:block border border-amber-500/30 shadow-2xl">
+                        <p class="font-serif text-3xl font-bold text-amber-400">100%</p>
+                        <p class="text-xs text-gray-300 uppercase tracking-widest font-medium">Swiss Standard Quality</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <span class="text-amber-400 uppercase tracking-widest text-xs font-semibold">Unmatched Artisanship</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">Every Second Engineered To Perfection</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        At KRONOS, time is not merely measured; it is honored. Each component undergoes rigorous testing under 300 meters of hydrostatic pressure, ensuring extreme durability and unwavering chronometric accuracy.
+                    </p>
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-3 text-sm text-gray-200">
+                            <i class="fa-solid fa-circle-check text-amber-400"></i>
+                            <span>Scratch-resistant Sapphire Crystal Lenses</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-200">
+                            <i class="fa-solid fa-circle-check text-amber-400"></i>
+                            <span>High-Frequency Automatic Movements (28,800 vph)</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-200">
+                            <i class="fa-solid fa-circle-check text-amber-400"></i>
+                            <span>Anti-Magnetic Titanium & 316L Stainless Steel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated About Us Section -->
+        <section id="about-us-page" class="py-20 bg-dark-900 border-t border-gray-800 relative overflow-hidden">
+            <!-- Background Glow Decor -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Title -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-amber-400 uppercase tracking-widest text-xs font-semibold">Our Story & Legacy</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-2">The Heritage of KRONOS</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-amber-500 to-amber-700 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-gray-300 text-sm sm:text-base mt-4 leading-relaxed">
+                        Combining decades of Swiss horological mastery with modern Indian luxury design, KRONOS creates timepieces that stand as heirlooms for generations.
+                    </p>
+                </div>
+
+                <!-- Story Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                    <div class="space-y-6">
+                        <span class="inline-block px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest rounded-md">
+                            Established 1988
+                        </span>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
+                            Where Timeless Passion Meets Uncompromising Precision
+                        </h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Founded with a vision to redefine high-end horology in India, KRONOS began as an exclusive atelier crafting bespoke timepieces for connoisseurs. Each watch represents hundreds of hours of meticulous assembly, hand-finishing, and hydrostatic performance calibration.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Our master horologists collaborate with Swiss movement pioneers to fuse cutting-edge 28,800 vph movements, scratchproof sapphire crystals, and grade-2 titanium casing into iconic designs that command attention.
+                        </p>
+                        
+                        <!-- Stats Badge Grid -->
+                        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-800">
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-amber-400">35+</p>
+                                <p class="text-xs text-gray-400">Years of Excellence</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-amber-400">100%</p>
+                                <p class="text-xs text-gray-400">Insured Shipping</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-amber-400">50K+</p>
+                                <p class="text-xs text-gray-400">Patrons Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workshop Image Showcase -->
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border border-gray-800 shadow-2xl bg-dark-800">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80" alt="Watchmaker Atelier" class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 glass-panel p-5 rounded-2xl border border-amber-500/30 shadow-2xl max-w-xs hidden sm:block">
+                            <p class="text-xs font-serif font-bold text-amber-400 mb-1">“Time is the ultimate luxury.”</p>
+                            <p class="text-[11px] text-gray-300">Master Watchmaker & Head of Design, KRONOS Atelier</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-dark-800/80 border border-gray-800 hover:border-amber-500/40 p-8 rounded-2xl transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white">Unrivaled Materials</h4>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Constructed from 316L surgical stainless steel, aerospace titanium, and genuine Italian calfskin to guarantee endurance and comfort.
+                        </p>
+                    </div>
+
+                    <div class="bg-dark-800/80 border border-gray-800 hover:border-amber-500/40 p-8 rounded-2xl transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white">Precision Movements</h4>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Powered by Swiss-inspired automatic and high-frequency tourbillon calibers, calibrated for pinpoint chronometric accuracy.
+                        </p>
+                    </div>
+
+                    <div class="bg-dark-800/80 border border-gray-800 hover:border-amber-500/40 p-8 rounded-2xl transition-all duration-300 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white">Authenticity Guaranteed</h4>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            Every timepiece comes with an engraved serial number, a certificate of authenticity, and a 2-year international warranty.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Brand Timeline -->
+                <div class="bg-dark-800/50 border border-gray-800 rounded-2xl p-8 sm:p-12">
+                    <h3 class="font-serif text-2xl font-bold text-white text-center mb-10">Our Milestones</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                        <div class="space-y-2 border-r border-gray-800 last:border-0 pr-4">
+                            <span class="font-serif text-2xl font-bold text-amber-400">1988</span>
+                            <h5 class="text-sm font-semibold text-white">Atelier Inception</h5>
+                            <p class="text-xs text-gray-400">First bespoke horology workshop opened in Mumbai.</p>
+                        </div>
+                        <div class="space-y-2 border-r border-gray-800 last:border-0 pr-4">
+                            <span class="font-serif text-2xl font-bold text-amber-400">2005</span>
+                            <h5 class="text-sm font-semibold text-white">Swiss Alliance</h5>
+                            <p class="text-xs text-gray-400">Partnered with Swiss movement artisans in Geneva.</p>
+                        </div>
+                        <div class="space-y-2 border-r border-gray-800 last:border-0 pr-4">
+                            <span class="font-serif text-2xl font-bold text-amber-400">2018</span>
+                            <h5 class="text-sm font-semibold text-white">Ocean Diver Launch</h5>
+                            <p class="text-xs text-gray-400">Introduced 300M certified tactical ceramic diver collection.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="font-serif text-2xl font-bold text-amber-400">2026</span>
+                            <h5 class="text-sm font-semibold text-white">Pan-India Boutiques</h5>
+                            <p class="text-xs text-gray-400">Expanding luxury digital store & flagship boutique experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Slide-over Cart Drawer -->
+    <div id="cart-drawer-overlay" onclick="toggleCart()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    
+    <div id="cart-drawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-dark-900 border-l border-gray-800 z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between shadow-2xl">
+        
+        <!-- Cart Header -->
+        <div class="p-5 border-b border-gray-800 flex items-center justify-between bg-dark-800">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-bag-shopping text-amber-400 text-xl"></i>
+                <h3 class="font-serif text-lg font-bold text-white">Your Shopping Cart</h3>
+            </div>
+            <button onclick="toggleCart()" class="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-4">
+            <!-- Items rendered via JS -->
+        </div>
+
+        <!-- Cart Footer & Checkout -->
+        <div class="p-5 border-t border-gray-800 bg-dark-800 space-y-4">
+            <!-- Promo Code Input -->
+            <div class="space-y-2">
+                <label class="text-xs text-gray-400 font-medium">Have a Discount Code?</label>
+                <div class="flex gap-2">
+                    <input type="text" id="coupon-input" placeholder="e.g. KRONOS15" class="flex-1 bg-dark-900 border border-gray-700 rounded-lg px-3 py-2 text-xs text-white uppercase focus:border-amber-400 focus:outline-none">
+                    <button onclick="applyDiscount()" class="px-4 py-2 bg-gray-700 hover:bg-amber-500 hover:text-black text-white text-xs font-bold rounded-lg transition-colors">
+                        Apply
+                    </button>
+                </div>
+                <div id="coupon-message" class="text-xs hidden"></div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="space-y-2 text-sm border-t border-gray-700/50 pt-3">
+                <div class="flex justify-between text-gray-400">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal" class="text-white font-semibold">₹0</span>
+                </div>
+                <div id="discount-row" class="flex justify-between text-emerald-400 hidden">
+                    <span>Discount Applied</span>
+                    <span id="cart-discount" class="font-semibold">-₹0</span>
+                </div>
+                <div class="flex justify-between text-gray-400">
+                    <span>Delivery (India)</span>
+                    <span class="text-emerald-400 font-semibold">FREE</span>
+                </div>
+                <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-gray-700">
+                    <span>Total Amount</span>
+                    <span id="cart-total" class="text-amber-400 font-serif text-lg">₹0</span>
+                </div>
+            </div>
+
+            <!-- Checkout Button -->
+            <button onclick="openCheckoutModal()" class="w-full gold-btn py-3.5 rounded-xl font-bold text-black text-sm tracking-wide flex items-center justify-center gap-2 shadow-lg">
+                <i class="fa-solid fa-lock"></i> Proceed to Secure Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Quick View Product Modal -->
+    <div id="quickview-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-dark-800 border border-gray-700 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative transform scale-95 transition-transform duration-300" id="quickview-card">
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 text-gray-300 hover:text-white flex items-center justify-center border border-gray-700">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="quickview-content" class="grid md:grid-cols-2">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="checkout-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-dark-800 border border-amber-500/40 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl space-y-4">
+            <div class="w-16 h-16 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-white">Order Confirmed!</h3>
+            <p class="text-gray-300 text-sm">Thank you for purchasing with KRONOS. Your timepiece will be dispatched with insured express transit within 24 hours.</p>
+            <div class="p-3 bg-dark-900 rounded-lg text-xs text-gray-400 font-mono">
+                Order ID: #KR-IN-<span id="order-id">84920</span>
+            </div>
+            <button onclick="closeCheckoutModal()" class="w-full gold-btn py-3 rounded-xl font-bold text-black text-sm">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-amber-500 text-black px-5 py-3 rounded-xl shadow-2xl font-semibold text-sm flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-lg"></i>
+        <span id="toast-message">Item added to your cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark-900 border-t border-gray-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full border border-amber-500 flex items-center justify-center bg-dark-800">
+                            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9" stroke-width="1.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <span class="font-serif text-xl font-bold text-white tracking-widest">KRONOS</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        India’s premier luxury horology atelier. Delivering precision timepieces crafted with Swiss precision and contemporary elegance.
+                    </p>
+                    <div class="flex space-x-3 text-gray-400">
+                        <a href="#" class="w-8 h-8 rounded-full bg-dark-800 hover:text-amber-400 flex items-center justify-center transition-colors border border-gray-700"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-dark-800 hover:text-amber-400 flex items-center justify-center transition-colors border border-gray-700"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-dark-800 hover:text-amber-400 flex items-center justify-center transition-colors border border-gray-700"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-white mb-4 uppercase tracking-wider">Collections</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#watch-collection" class="hover:text-amber-400 transition-colors">Automatic Chronographs</a></li>
+                        <li><a href="#watch-collection" class="hover:text-amber-400 transition-colors">Minimalist Quartz</a></li>
+                        <li><a href="#watch-collection" class="hover:text-amber-400 transition-colors">Ocean Divers Series</a></li>
+                        <li><a href="#watch-collection" class="hover:text-amber-400 transition-colors">Tourbillon Mechanical</a></li>
+                        <li><a href="#watch-collection" class="hover:text-amber-400 transition-colors">Titanium Hybrids</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Care -->
+                <div>
+                    <h4 class="font-serif text-sm font-bold text-white mb-4 uppercase tracking-wider">Client Support</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#" class="hover:text-amber-400 transition-colors">Book Boutique Appointment</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors">Track Order Status</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors">Watch Care & Servicing</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors">Warranty Registration</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors">Returns & Exchanges Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Boutique Location -->
+                <div class="space-y-3">
+                    <h4 class="font-serif text-sm font-bold text-white uppercase tracking-wider">Flagship Boutique</h4>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        <i class="fa-solid fa-location-dot text-amber-400 mr-2"></i>
+                        Level 2, Palladium Mall, Lower Parel, Mumbai, Maharashtra - 400013
+                    </p>
+                    <p class="text-xs text-gray-400">
+                        <i class="fa-solid fa-phone text-amber-400 mr-2"></i>
+                        +91 1800-200-9000 (Toll-Free)
+                    </p>
+                    <p class="text-xs text-gray-400">
+                        <i class="fa-solid fa-envelope text-amber-400 mr-2"></i>
+                        concierge@kronoswatches.in
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright & Payment badges -->
+            <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 KRONOS Luxury Timepieces Ltd. All rights reserved.</p>
+                <div class="flex items-center space-x-3 text-lg">
+                    <i class="fa-brands fa-cc-visa text-gray-400"></i>
+                    <i class="fa-brands fa-cc-mastercard text-gray-400"></i>
+                    <i class="fa-solid fa-credit-card text-gray-400"></i>
+                    <span class="text-xs font-bold text-amber-400 bg-dark-800 px-2 py-1 rounded border border-gray-700">UPI Accepted</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- 5 WATCHES DATA STORE ---
+        const watches = [
+            {
+                id: 1,
+                name: "Chronos Royal Automatic",
+                subtitle: "Swiss Movement Stainless Steel",
+                originalPrice: 24999,
+                price: 18999,
+                discountPercent: 24,
+                rating: 4.9,
+                reviewsCount: 128,
+                image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
+                description: "Features a self-winding automatic movement visible through an anti-reflective sapphire crystal case back. Built with 316L solid surgical steel.",
+                specs: ["Swiss Movement", "100m Water Resistant", "Sapphire Crystal", "42mm Case"]
+            },
+            {
+                id: 2,
+                name: "Aura Minimalist Rose Gold",
+                subtitle: "Ultra-Slim Milanese Mesh",
+                originalPrice: 12499,
+                price: 8999,
+                discountPercent: 28,
+                rating: 4.8,
+                reviewsCount: 94,
+                image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+                description: "An elegant, minimalist dress watch with a warm rose gold plating, ultra-slim 6mm profile, and breathable stainless steel mesh strap.",
+                specs: ["Japanese Quartz", "6mm Ultra-Slim", "Rose Gold Ion-Plated", "38mm Case"]
+            },
+            {
+                id: 3,
+                name: "Vanguard Ocean Diver 300M",
+                subtitle: "Tactical Matte Black Ceramic",
+                originalPrice: 34999,
+                price: 27999,
+                discountPercent: 20,
+                rating: 5.0,
+                reviewsCount: 210,
+                image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80",
+                description: "Engineered for deep-water exploration. Includes a scratchproof rotating ceramic bezel, high-visibility Swiss Super-LumiNova markers.",
+                specs: ["300m Waterproof", "Unidirectional Ceramic Bezel", "Helium Escape Valve", "44mm Case"]
+            },
+            {
+                id: 4,
+                name: "Heritage Classic Tourbillon",
+                subtitle: "Italian Leather Open-Heart",
+                originalPrice: 42999,
+                price: 32499,
+                discountPercent: 24,
+                rating: 4.9,
+                reviewsCount: 86,
+                image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80",
+                description: "Handcrafted vintage watch with a genuine Italian calfskin leather strap and an intricate open-heart tourbillon mechanical escapement.",
+                specs: ["Hand-Wound Mechanical", "Italian Calfskin Leather", "Exhibition Caseback", "40mm Case"]
+            },
+            {
+                id: 5,
+                name: "Apex Precision Hybrid Titanium",
+                subtitle: "Grade-2 Aerospace Titanium",
+                originalPrice: 19999,
+                price: 14999,
+                discountPercent: 25,
+                rating: 4.7,
+                reviewsCount: 162,
+                image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
+                description: "Ultra-lightweight titanium chronograph combined with modern dual-timezone subdials, made for frequent global travelers.",
+                specs: ["Grade-2 Titanium", "Dual Timezone Subdials", "Featherlight 72g", "41mm Case"]
+            }
+        ];
+
+        // Shopping Cart State
+        let cart = [];
+        let appliedDiscountCode = null;
+        let discountPercentage = 0;
+
+        // --- HERO SLIDER LOGIC ---
+        let currentSlide = 0;
+        const totalSlides = 3;
+
+        function updateSlider() {
+            const track = document.getElementById('slider-track');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update Indicator dots
+            const dots = document.querySelectorAll('.slide-dot');
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.className = "slide-dot w-8 h-2 rounded-full bg-amber-500 transition-all duration-300";
+                } else {
+                    dot.className = "slide-dot w-2.5 h-2 rounded-full bg-white/40 hover:bg-white transition-all duration-300";
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        // Auto slide interval
+        setInterval(nextSlide, 6000);
+
+        // --- RENDER 5 WATCH PRODUCTS ---
+        function renderProducts() {
+            const container = document.getElementById('product-grid');
+            container.innerHTML = watches.map(watch => `
+                <div class="bg-dark-800 border border-gray-800 hover:border-amber-500/50 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col justify-between group shadow-xl">
+                    <!-- Product Image Container -->
+                    <div class="relative overflow-hidden bg-dark-900 aspect-square cursor-pointer" onclick="openQuickView(${watch.id})">
+                        <img src="${watch.image}" alt="${watch.name}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        
+                        <!-- Discount Badge -->
+                        <div class="absolute top-3 left-3 bg-amber-500 text-black text-xs font-extrabold px-2.5 py-1 rounded-md shadow">
+                            ${watch.discountPercent}% OFF
+                        </div>
+
+                        <!-- Quick View Button overlay -->
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="glass-panel px-4 py-2 rounded-lg text-xs font-bold text-white flex items-center gap-2 border border-white/20">
+                                <i class="fa-solid fa-eye"></i> Quick View
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-amber-400 mb-1">
+                                <span class="font-medium">${watch.subtitle}</span>
+                                <div class="flex items-center gap-1">
+                                    <i class="fa-solid fa-star text-amber-400"></i>
+                                    <span class="text-white font-semibold">${watch.rating}</span>
+                                    <span class="text-gray-500">(${watch.reviewsCount})</span>
+                                </div>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-white group-hover:text-amber-400 transition-colors cursor-pointer" onclick="openQuickView(${watch.id})">
+                                ${watch.name}
+                            </h3>
+                            <p class="text-xs text-gray-400 mt-2 line-clamp-2">
+                                ${watch.description}
+                            </p>
+                        </div>
+
+                        <!-- Specs Tags -->
+                        <div class="flex flex-wrap gap-1.5">
+                            ${watch.specs.slice(0, 2).map(spec => `
+                                <span class="bg-dark-900 text-gray-300 text-[10px] px-2 py-0.5 rounded border border-gray-700/60">${spec}</span>
+                            `).join('')}
+                        </div>
+
+                        <!-- Price & Add to Cart -->
+                        <div class="pt-3 border-t border-gray-700/50 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-400 line-through block">₹${watch.originalPrice.toLocaleString('en-IN')}</span>
+                                <span class="font-serif text-xl font-bold text-amber-400">₹${watch.price.toLocaleString('en-IN')}</span>
+                            </div>
+                            <button onclick="addToCart(${watch.id})" class="gold-btn px-4 py-2.5 rounded-xl font-bold text-black text-xs flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- CART MANAGEMENT LOGIC ---
+        function addToCart(watchId) {
+            const item = watches.find(w => w.id === watchId);
+            const existing = cart.find(c => c.id === watchId);
+
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...item, quantity: 1 });
+            }
+
+            updateCartUI();
+            showToast(`Added "${item.name}" to cart`);
+            
+            // Auto open cart
+            toggleCart(true);
+        }
+
+        function removeFromCart(watchId) {
+            cart = cart.filter(item => item.id !== watchId);
+            updateCartUI();
+        }
+
+        function updateQuantity(watchId, delta) {
+            const item = cart.find(c => c.id === watchId);
+            if (!item) return;
+
+            item.quantity += delta;
+            if (item.quantity <= 0) {
+                removeFromCart(watchId);
+            } else {
+                updateCartUI();
+            }
+        }
+
+        function updateCartUI() {
+            // Cart badge count
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').innerText = totalCount;
+
+            // Render Cart Drawer Items
+            const container = document.getElementById('cart-items-container');
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 space-y-3">
+                        <i class="fa-solid fa-basket-shopping text-4xl text-gray-600"></i>
+                        <p class="text-gray-400 text-sm">Your shopping cart is currently empty.</p>
+                        <a href="#watch-collection" onclick="toggleCart(false)" class="inline-block gold-btn px-4 py-2 rounded-lg text-black font-bold text-xs">
+                            Browse Timepieces
+                        </a>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = cart.map(item => `
+                    <div class="flex items-center gap-4 p-3 bg-dark-800 rounded-xl border border-gray-800">
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg bg-dark-900">
+                        <div class="flex-1">
+                            <h4 class="font-semibold text-white text-xs">${item.name}</h4>
+                            <p class="text-amber-400 font-serif font-bold text-sm">₹${item.price.toLocaleString('en-IN')}</p>
+                            
+                            <div class="flex items-center gap-3 mt-2">
+                                <div class="flex items-center bg-dark-900 border border-gray-700 rounded-lg">
+                                    <button onclick="updateQuantity(${item.id}, -1)" class="px-2 py-0.5 text-xs text-gray-300 hover:text-white">-</button>
+                                    <span class="px-2 text-xs font-bold text-white">${item.quantity}</span>
+                                    <button onclick="updateQuantity(${item.id}, 1)" class="px-2 py-0.5 text-xs text-gray-300 hover:text-white">+</button>
+                                </div>
+                                <button onclick="removeFromCart(${item.id})" class="text-xs text-red-400 hover:text-red-300">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Calculate Totals
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            let discountAmount = 0;
+
+            if (appliedDiscountCode) {
+                discountAmount = Math.round((subtotal * discountPercentage) / 100);
+            }
+
+            const total = subtotal - discountAmount;
+
+            document.getElementById('cart-subtotal').innerText = `₹${subtotal.toLocaleString('en-IN')}`;
+            document.getElementById('cart-discount').innerText = `-₹${discountAmount.toLocaleString('en-IN')}`;
+            document.getElementById('cart-total').innerText = `₹${total.toLocaleString('en-IN')}`;
+
+            const discountRow = document.getElementById('discount-row');
+            if (discountAmount > 0) {
+                discountRow.classList.remove('hidden');
+            } else {
+                discountRow.classList.add('hidden');
+            }
+        }
+
+        function toggleCart(forceOpen = null) {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-drawer-overlay');
+
+            const isOpen = !drawer.classList.contains('translate-x-full');
+            const shouldOpen = forceOpen !== null ? forceOpen : !isOpen;
+
+            if (shouldOpen) {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // --- DISCOUNT COUPON LOGIC ---
+        function applyDiscount() {
+            const codeInput = document.getElementById('coupon-input').value.trim().toUpperCase();
+            const msgBox = document.getElementById('coupon-message');
+
+            if (cart.length === 0) {
+                msgBox.className = "text-xs text-red-400 mt-1";
+                msgBox.innerText = "Add products to cart before applying coupon.";
+                msgBox.classList.remove('hidden');
+                return;
+            }
+
+            if (codeInput === 'KRONOS15') {
+                appliedDiscountCode = 'KRONOS15';
+                discountPercentage = 15;
+                msgBox.className = "text-xs text-emerald-400 mt-1 font-semibold";
+                msgBox.innerText = "Coupon 'KRONOS15' applied! 15% discount unlocked.";
+                msgBox.classList.remove('hidden');
+                updateCartUI();
+            } else if (codeInput === 'LUXE10') {
+                appliedDiscountCode = 'LUXE10';
+                discountPercentage = 10;
+                msgBox.className = "text-xs text-emerald-400 mt-1 font-semibold";
+                msgBox.innerText = "Coupon 'LUXE10' applied! 10% discount unlocked.";
+                msgBox.classList.remove('hidden');
+                updateCartUI();
+            } else {
+                msgBox.className = "text-xs text-red-400 mt-1";
+                msgBox.innerText = "Invalid Coupon Code. Try 'KRONOS15'";
+                msgBox.classList.remove('hidden');
+            }
+        }
+
+        function copyCoupon(code) {
+            navigator.clipboard.writeText(code);
+            showToast(`Coupon "${code}" copied to clipboard!`);
+            document.getElementById('coupon-input').value = code;
+        }
+
+        // --- QUICK VIEW MODAL LOGIC ---
+        function openQuickView(watchId) {
+            const watch = watches.find(w => w.id === watchId);
+            const content = document.getElementById('quickview-content');
+
+            content.innerHTML = `
+                <div class="bg-dark-900 p-6 flex items-center justify-center">
+                    <img src="${watch.image}" alt="${watch.name}" class="max-h-80 object-cover rounded-xl">
+                </div>
+                <div class="p-6 flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-amber-400 text-xs font-semibold uppercase tracking-wider">${watch.subtitle}</span>
+                        <h2 class="font-serif text-2xl font-bold text-white mt-1">${watch.name}</h2>
+                        
+                        <div class="flex items-center gap-2 mt-2 text-xs">
+                            <span class="bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded border border-amber-500/30">
+                                <i class="fa-solid fa-star"></i> ${watch.rating} / 5
+                            </span>
+                            <span class="text-gray-400">(${watch.reviewsCount} verified reviews)</span>
+                        </div>
+
+                        <p class="text-xs text-gray-300 mt-4 leading-relaxed">${watch.description}</p>
+
+                        <div class="mt-4 space-y-1.5">
+                            <p class="text-xs font-bold text-gray-300 uppercase">Key Specifications:</p>
+                            <ul class="text-xs text-gray-400 space-y-1">
+                                ${watch.specs.map(spec => `<li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> ${spec}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 line-through block">Original: ₹${watch.originalPrice.toLocaleString('en-IN')}</span>
+                            <span class="font-serif text-2xl font-bold text-amber-400">₹${watch.price.toLocaleString('en-IN')}</span>
+                        </div>
+                        <button onclick="addToCart(${watch.id}); closeQuickView();" class="gold-btn px-6 py-3 rounded-xl font-bold text-black text-xs flex items-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('quickview-modal');
+            const card = document.getElementById('quickview-card');
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            card.classList.remove('scale-95');
+        }
+
+        function closeQuickView() {
+            const modal = document.getElementById('quickview-modal');
+            const card = document.getElementById('quickview-card');
+
+            card.classList.add('scale-95');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        // --- CHECKOUT SIMULATION ---
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                showToast("Your cart is empty!");
+                return;
+            }
+
+            toggleCart(false);
+            document.getElementById('order-id').innerText = Math.floor(10000 + Math.random() * 90000);
+
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+
+            // Reset Cart
+            cart = [];
+            appliedDiscountCode = null;
+            discountPercentage = 0;
+            updateCartUI();
+        }
+
+        function closeCheckoutModal() {
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        // --- TOAST NOTIFICATION LOGIC ---
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').innerText = msg;
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // --- INITIALIZATION ---
+        window.onload = function() {
+            renderProducts();
+            updateCartUI();
+        };
+    </script>
+</body>
+</html>
